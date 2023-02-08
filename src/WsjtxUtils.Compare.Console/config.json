@@ -1,0 +1,24 @@
+{
+  "PeriodicTimerSeconds": 1,
+  "AmountOfSecondsInBufferWithNoMatchIsUncorrelated": 30.0,
+  "IsCorrelatedDecodeWiggleTimeInSeconds": 12,
+  "CorrelatedDecodesFile": "correlated-decodes-ab.csv",
+  "UncorrelatedDecodesFileSourceA": "uncorrelated-decodes-a.csv",
+  "UncorrelatedDecodesFileSourceB": "uncorrelated-decodes-b.csv",
+  "Server": {
+    "Address": "127.0.0.1",
+    "Port": 2237
+  },
+  "Serilog": {
+    "MinimumLevel": "Information",
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "theme": "Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Code, Serilog.Sinks.Console",
+          "outputTemplate": "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} {NewLine}{Exception}"
+        }
+      }
+    ]
+  }
+}
