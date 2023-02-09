@@ -12,6 +12,22 @@ To compile from source:
 - [.NET 7 SDK](https://docs.microsoft.com/en-us/dotnet/core/install/)
     - Installation instruction for [Windows](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net70), [Mac](https://docs.microsoft.com/en-us/dotnet/core/install/macos), [Linux](https://docs.microsoft.com/en-us/dotnet/core/install/linux)
 
+## Quickstart
+For pre-compiled [releases](https://github.com/KC3PIB/WsjtxUtils.Compare/releases):
+- Ensure that you have the .NET 7 runtime installed
+- Download the package for your OS
+- Extract the archive to your desired location
+- Run the executable file
+    - Windows ```WjtxUtils.Compare.Console.exe```
+    - Linux & OSX ```WsjtxUtils.Compare.Console```
+- CTRL-C in the console to exit
+- Edit the config.json file to customize available options
+
+To compile from source:
+- Ensure that you have the .NET 7 SDK installed
+- Clone or download the source code
+- ```dotnet publish -c release src/WsjtxUtils.Compare.Console/WsjtxUtils.Compare.Console.csproj --output <OUTPUT_DIRECTORY>```
+
 ## Configuration
 Options can be configured by editing the [config.json](https://github.com/KC3PIB/WsjtxUtils.Compare/) file or by overriding specific parameters by command-line.
 ```json
