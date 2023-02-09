@@ -74,7 +74,7 @@ namespace WsjtxUtils.Compare.Common
             using (var csv = new CsvWriter(writer, NoHeadersConfig))
             {
                 csv.Context.RegisterClassMap<QsoTupleMap>();
-                csv.WriteRecordsAsync(correlatedDecodes);
+                csv.WriteRecords(correlatedDecodes);
             }
         }
 
